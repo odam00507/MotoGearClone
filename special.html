@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGear Clone by habibulloh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-image: url('https://github.com/odam00507/MotoGearClone/blob/resources/bg_bike.jpg?raw=true');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: wrap;
+            background-position: center top;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        @media (min-width: 1920px) {
+            body {
+                font-size: 18px;
+            }
+        }
+
+        .toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        .lang img {
+            width: 30px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+            display: inline-block; /* Ensure proper alignment */
+            vertical-align: middle; /* Align with the text */
+            margin-right: 5px; /* Space between the flag and "English" */
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .home {
+            color: #50C878;
+        }
+
+
+        li {
+            list-style: none;
+            display: inline-block;
+            justify-content: space-evenly;
+            
+        }
+
+        a:hover {
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #50C878;
+        }
+
+        .intro {
+            margin-top: 20vw;
+            font-family: 'Montserrat';
+            text-align: center;
+            font-size: 3vw;
+            color: #50C878;
+            background-color: transparent;
+        }
+
+        h1 {
+            font-size: 6vw;
+            font-family: 'Montserrat';
+            color: white;
+        }
+
+        button {
+            font-family: 'Montserrat';
+            background-color: #50C878;
+            box-shadow: none;
+            border: none;
+            border-radius: 0%;
+            margin-top: 3vw;
+            padding-inline: 2.5vw;
+            padding-block: 1.2vw;
+            font-size: 2vw;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #3DA062;
+            transition: 250ms ease-in;
+        }
+
+        .why_us {
+            margin-top: 20vw;
+            padding-top: 15px;
+            text-align: center;
+            background-color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="toolbar">
+                <div class="lang">
+                    <a href="#"><img src="https://github.com/odam00507/MotoGearClone/blob/resources/united-kingdom.png?raw=true" alt="language">English</a>
+                </div>
+
+                <div class="logo">
+                    <a href="#"><img src="https://motogear.uz/wp-content/uploads/2024/04/New-Project.svg" alt="logo"></a>
+                </div>
+
+                <ul class="navbar">
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </div>
+
+        <div class="intro">
+            <h1>MOTOTEXNIKA</h1>
+            <h3>MOTOTSIKL JIHOZLARI DO'KONI</h3>
+            <button>HOZIROQ XARID QILING</button>
+        </div>
+
+        <div class="why_us">
+            tanlov
+        </div>
+    </div>
+</body>
+</html>
