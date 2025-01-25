@@ -1,0 +1,205 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-image: url('https://github.com/odam00507/MotoGearClone/blob/resources/bg_bike.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: wrap;
+    background-position: center top;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1920px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.lang img {
+    width: 4vw; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: inline-block; /* Ensure proper alignment */
+    vertical-align: middle; /* Align with the text */
+    margin-right: 5px; /* Space between the flag and "English" */
+}
+
+.logo img {
+    width: 18vw;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.home {
+    color: #50C878;
+}
+
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-right: 2.5vw;    
+}
+
+a:hover {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #50C878;
+}
+
+.intro {
+    margin-top: 20vw;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 3vw;
+    color: #50C878;
+    background-color: transparent;
+}
+
+@media (min-width: 768) {
+    .intro {
+        margin-top: 10vw;
+    }
+}
+
+h1 {
+    font-size: 6vw;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+button {
+    font-family: 'Montserrat';
+    background-color: #50C878;
+    box-shadow: none;
+    border: none;
+    border-radius: 0%;
+    margin-top: 3vw;
+    padding-inline: 2.5vw;
+    padding-block: 1.2vw;
+    font-size: 2vw;
+    color: white;
+}
+
+button:hover {
+    background-color: #3DA062;
+    transition: 250ms ease-in;
+}
+
+.why_us {
+    margin-top: 20vw;
+    padding-top: 15px;
+    text-align: center;
+    background-color: white;
+    max-width: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3vw;
+    margin-top: 20vw;
+}
+
+
+
+.why_us ul {
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+}
+
+.why_us li {
+    margin: 0.2vw;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.why_us h2 {
+    font-size: large;
+    margin: 2vw;
+}
+
+.line {
+    border: 1px solid slategrey;
+    padding: 0;
+    font-size: medium;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .why_us ul {
+        display: grid;
+        flex-direction: row;
+    }
+    .why_us li {
+        margin: 3vw;
+        max-width: 100%;
+    }
+    .line {
+        width: 100%;
+        margin: 2vw;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .why_us li {
+        margin: 3vw;
+        font-size: medium;
+    }
+    
+    .wrapper {
+        border: 1px solid cyan;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper div {
+        height: 18vw;
+        margin: 1vw auto;
+        border: 1px solid slategrey;
+        padding: 0;
+    }
+}
+.line {
+    height: 13vw;
+    margin: 0 1.4vw;
+    border: 1px solid slategrey;
+    padding: 0;
+}
+
+
+
