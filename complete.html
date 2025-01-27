@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGear Clone by habibulloh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+            body {
+        font-family: 'Montserrat', Arial, sans-serif;
+        background-color: white;
+        font-size: 2vw;
+        width: wrap;
+        background-position: center top;
+    }
+
+    .main img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    ul li {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .lang img {
+        width: 4vw;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        position: relative;
+    }
+
+    .logo img {
+        width: 18vw;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .home {
+        color: #50C878;
+    }
+
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        justify-content: space-evenly;
+        margin-right: 2.5vw;    
+    }
+
+    a:hover {
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: #50C878;
+    }
+
+    .down {
+        background-color: white;
+        width: 100%;
+    }
+
+    .intro {
+        margin-top: 20vw;
+        font-family: 'Montserrat';
+        text-align: center;
+        font-size: 3vw;
+        color: #50C878;
+        background-color: transparent;
+    }
+
+    @media (min-width: 768) {
+        .intro {
+            margin-top: 10vw;
+        }
+    }
+
+    h1 {
+        font-size: 6vw;
+        font-family: 'Montserrat';
+        color: white;
+    }
+
+    button {
+        font-family: 'Montserrat';
+        background-color: #50C878;
+        box-shadow: none;
+        border: none;
+        border-radius: 0%;
+        margin-top: 3vw;
+        padding-inline: 2.5vw;
+        padding-block: 1.2vw;
+        font-size: 2vw;
+        color: white;
+    }
+
+    button:hover {
+        background-color: #3DA062;
+        transition: 250ms ease-in;
+    }
+
+    .why_us {
+        margin: 0vw;
+        text-align: center;
+        background-color: white;
+        max-width: 100%;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 22vw;
+    }
+    .wrapper {
+        margin-top: 5vw;
+    }
+
+
+
+    .why_us ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .why_us li {
+        margin: 0.2vw;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    .why_us h2 {
+        margin: 2vw;
+        font-size: 1.8vw;
+        font-weight: 600;
+    }
+    .why_us h4 {
+        font-size: 1.5vw;
+        font-weight: 100;
+    }
+
+    .line {
+        border: 1px solid slategrey;
+        padding: 0;
+        font-size: medium;
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        .why_us ul {
+            display: grid;
+            flex-direction: row;
+            padding: 1vw;
+        }
+        .why_us li {
+            margin: 3vw;
+            max-width: 100%;
+        }
+        .line {
+            width: 100%;
+            max-height: 0%;
+            margin: 1vw;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 1920px) {
+        .why_us li {
+            margin: 3vw;
+            font-size: medium;
+        }
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .wrapper div {
+            height: 18vw;
+            margin: 1vw auto;
+            padding: 0;
+        }
+        .line {
+            height: 100%;
+            margin: 0 1.4vw;
+            padding: 0;
+        }
+    }
+
+    @media (min-width: 1921px) {
+        
+        .why_us li {
+            margin: 5vw;
+            font-size: medium;
+        }
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .wrapper div {
+            height: 18vw;
+            margin: 1vw auto;
+            padding: 0;
+        }
+        .line {
+            height: 13vw;
+            margin: 0 1.4vw;
+            padding: 0;
+        }
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vw;
+        margin: 5vw;
+    }
+    iframe {
+        border: 0;
+        width: 100%;
+        max-height: 30%;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-around;
+        margin: 3vw;
+        font-size: 1.5vw;
+    }
+    .links {
+        margin: 0vw;
+        width: 30vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom h2 {
+        font-size: 2.4vw;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://github.com/odam00507/MotoGearClone/blob/resources/bg_bike.jpg?raw=true" alt="moto">
+        <div class="top">
+            <div class="toolbar">
+                <div class="lang">
+                    <a href="#"><img src="https://github.com/odam00507/MotoGearClone/blob/resources/united-kingdom.png?raw=true" alt="language">English</a>
+                </div>
+
+                <div class="logo">
+                    <a href="#"><img src="https://motogear.uz/wp-content/uploads/2024/04/New-Project.svg" alt="logo"></a>
+                </div>
+
+                <ul class="navbar">
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </div>
+
+            <div class="intro">
+                <h1>MOTOTEXNIKA</h1>
+                <h3>MOTOTSIKL JIHOZLARI DO'KONI</h3>
+                <button>HOZIROQ XARID QILING</button>
+            </div>
+            <div class="down">
+            <div class="why_us">
+                <div class="wrapper">
+                    <ul>
+                        <li><h2>SECURE PAYMENT</h2><h4>All our payments our SSL secured</h4></li>
+                        <div class="line"></div>
+                        <li><h2>CAREFUL DELIVERY</h2><h4>Super fast shipping to your door</h4></li>
+                        <div class="line"></div>
+                        <li><h2>BEST SERVICE</h2><h4>Live chat and app for convenience</h4></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1394.0907230156743!2d69.32437404072974!3d41.24790301532761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae5f4a594a0e2b%3A0xfca8e8dcc557fa29!2sMotoGear!5e1!3m2!1sen!2s!4v1737879768115!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <hr>
+            <div class="bottom">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="uduno">
+                    <h2>EARTH STORE</h2>
+                </div>
+
+                <div class="copyright">
+                    Copyright © 2025 MotoGear.uz
+                </div>
+            </div>
+
+        </div>
+        </div>
+</body>
+</html>
